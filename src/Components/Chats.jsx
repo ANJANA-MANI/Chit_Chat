@@ -31,8 +31,8 @@ const Chats = () => {
   };
 
   return (
-   
-    <div className="chats">
+   <>
+    <div className="chats" style={{position:"relative"}}>
       
   {chats && Object.keys(chats).length > 0 &&
   Object.entries(chats)
@@ -48,11 +48,14 @@ const Chats = () => {
             <span>{chat[1]?.userInfo?.username}</span>
             <p>{chat[1]?.lastMessage?.text}</p>
           </div>
+     
+   
         </div>
       ))}
     
 </div>
-     
+
+</>  
   )
 };
 

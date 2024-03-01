@@ -29,6 +29,7 @@
     width: 100vw;
     position: relative;
 overflow: hidden;
+
     .container{
         @include tablet{
             width:100%;
